@@ -24,6 +24,7 @@ body {
     transform-style: preserve-3d;
 }
 
+/* Box */
 .product__box {
     position: relative;
     width: 300px;
@@ -65,6 +66,7 @@ body {
         opacity: 0.04;
     }
 
+/* Product Name */
 .product__box__name {
     position: absolute;
     top: 0;
@@ -84,6 +86,7 @@ body {
         opacity: 1;
     }
 
+/* Buy */
 .product__box__buy {
     position: absolute;
     bottom: 0;
@@ -101,10 +104,12 @@ body {
 }
 
     .product__box:hover .product__box__buy {
+        transform: translate3d(-50%,-50%,120px);
         bottom: 30px;
         opacity: 1;
     }
 
+/* Circle */
 .product__box__circle {
     position: absolute;
     top: 50%;
@@ -117,11 +122,12 @@ body {
     transform-style: preserve-3d;
     z-index: 10;
     opacity: 1;
-    transform: translate3d(-50%,-50%,50px);
+    transform: translate3d(-50%,-50%,30px);
 }
 
+/* Product */
 .product__box__product {
-    width: 380px;
+    width: 250px;
     position: absolute;
     top: 50%;
     left: 46%;
@@ -129,8 +135,30 @@ body {
     transition: 0.5s;
     transform-style: preserve-3d;
     transform: translate3d(-50%,-50%,50px) rotate(-15deg);
-    z-index: 11;
+    z-index: 10;
 }
+
+    .product__box:hover .product__box__product {
+        transform: translate3d(-50%,-50%,100px) rotate(-15deg);
+        width: 300px
+    }
+
+
+/* Colors Circle and Buy */
+.product__box:nth-child(1) .product__box__circle,
+.product__box:nth-child(1) .product__box__buy {
+    background: #33cfcf;
+}
+.product__box:nth-child(2) .product__box__circle,
+.product__box:nth-child(2) .product__box__buy {
+    background: #eac62c;
+}
+.product__box:nth-child(3) .product__box__circle,
+.product__box:nth-child(3) .product__box__buy {
+    background: #f3308b;
+}
+
+/* Colors */
 
 /* .product__box:nth-child(1) .product__box__circle,
 .product__box:nth-child(1) .product__box__buy {
@@ -144,16 +172,3 @@ body {
 .product__box:nth-child(3) .product__box__buy {
     background: #f3308b;
 } */
-
-.product__box:nth-child(1) .product__box__circle,
-.product__box:nth-child(1) .product__box__buy {
-    background: #33cfcf;
-}
-.product__box:nth-child(2) .product__box__circle,
-.product__box:nth-child(2) .product__box__buy {
-    background: #eac62c;
-}
-.product__box:nth-child(3) .product__box__circle,
-.product__box:nth-child(3) .product__box__buy {
-    background: #f3308b;
-}
