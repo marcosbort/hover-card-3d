@@ -7,11 +7,14 @@
 }
 
 body {
+    background: #131313;
+}
+
+.general-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #131313;
 }
 
 .product__container {
@@ -121,7 +124,7 @@ body {
     max-width: 300px;
     transition: 0.5s;
     transform-style: preserve-3d;
-    transform: translate3d(-50%,-50%,10px);
+    transform: translate3d(-50%,-50%,10px) rotate(8deg);
     z-index: 10;
 }
 
@@ -129,7 +132,6 @@ body {
         transform: translate3d(-50%,-50%,80px) rotate(-16deg);
         width: 330px
     }
-
 
 /* Colors Circle and Buy */
 .product__box:nth-child(1) .product__box__circle,
@@ -145,7 +147,7 @@ body {
     background: #f3308b;
 }
 
-/* Color Text Bootom */
+/* Color Text (title) */
 .product__box__text-1 {
     color: #33cfcf;
 }
@@ -156,11 +158,11 @@ body {
     color: #f3308b;
 }
 
-
-.firma {
+.footer {
     font-weight: 200;
     font-size: 16px;
     font-style: italic;
     color: #333;
-    margin-top: 80px;
+    text-align: center;
+    margin-top: -150px;
 }
