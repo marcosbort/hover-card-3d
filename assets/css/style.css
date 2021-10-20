@@ -35,36 +35,14 @@ body {
     transform-style: preserve-3d;
 }
 
-    .product__box::before {
-        content: "BEATS";
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        font-size: 6em;
-        font-weight: 900;
-        counter-reset: #fff;
-        font-style: italic;
-        opacity: 0;
-        transition: 0.5s;
-    }
-
-    .product__box::after {
-        content: "AUDIO";
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        font-size: 5em;
-        font-weight: 900;
-        counter-reset: #fff;
-        font-style: italic;
-        opacity: 0;
-        transition: 0.5s;
-    }
-
-    .product__box::before,
-    .product__box::after {
-        opacity: 0.04;
-    }
+.product__box__text {
+    position: absolute;
+    display: none;
+    top: 50px;
+    left: 80px;
+    font-weight: 200;
+    font-style: italic;
+}   
 
 /* Product Name */
 .product__box__name {
@@ -74,15 +52,18 @@ body {
     text-align: center;
     color: #fff;
     width: 100%;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
     transform-style: preserve-3d;
-    transform: translate3d(0,0,75px);
+    transform: translate3d(0,0,140px);
     transition: 0.5s;
     opacity: 0;
     z-index: 10;
 }
 
     .product__box:hover .product__box__name {
-        top: 40px;
+        top: 60px;
         opacity: 1;
     }
 
@@ -92,8 +73,9 @@ body {
     bottom: 0;
     left: 50%;
     transform-style: preserve-3d;
-    transform: translate3d(-50%,0,75px);
+    transform: translate3d(-50%,0,150px);
     color: #fff;
+    font-weight: 600;
     background: #333;
     padding: 10px 25px;
     border-radius: 30px;
@@ -104,7 +86,7 @@ body {
 }
 
     .product__box:hover .product__box__buy {
-        transform: translate3d(-50%,-50%,120px);
+        transform: translate3d(-50%,-50%,150px);
         bottom: 30px;
         opacity: 1;
     }
@@ -120,27 +102,31 @@ body {
     transition: 0.5s;
     background: #fff;
     transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,0px);
     z-index: 10;
-    opacity: 1;
-    transform: translate3d(-50%,-50%,30px);
+    opacity: 0.7;
 }
+
+    .product__box:hover .product__box__circle {
+        opacity: 1;
+    }
 
 /* Product */
 .product__box__product {
-    width: 250px;
+    width: 230px;
     position: absolute;
     top: 50%;
     left: 46%;
     max-width: 300px;
     transition: 0.5s;
     transform-style: preserve-3d;
-    transform: translate3d(-50%,-50%,50px) rotate(-15deg);
+    transform: translate3d(-50%,-50%,10px);
     z-index: 10;
 }
 
     .product__box:hover .product__box__product {
-        transform: translate3d(-50%,-50%,100px) rotate(-15deg);
-        width: 300px
+        transform: translate3d(-50%,-50%,80px) rotate(-16deg);
+        width: 330px
     }
 
 
@@ -158,17 +144,22 @@ body {
     background: #f3308b;
 }
 
-/* Colors */
+/* Color Text Bootom */
+.product__box__text-1 {
+    color: #33cfcf;
+}
+.product__box__text-2 {
+    color: #eac62c;
+}
+.product__box__text-3 {
+    color: #f3308b;
+}
 
-/* .product__box:nth-child(1) .product__box__circle,
-.product__box:nth-child(1) .product__box__buy {
-    background: #2eebec;
+
+.firma {
+    font-weight: 200;
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+    margin-top: 80px;
 }
-.product__box:nth-child(2) .product__box__circle,
-.product__box:nth-child(2) .product__box__buy {
-    background: #eac62c;
-}
-.product__box:nth-child(3) .product__box__circle,
-.product__box:nth-child(3) .product__box__buy {
-    background: #f3308b;
-} */

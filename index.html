@@ -9,31 +9,39 @@
     <title>Mousemove Card 3D</title>
 </head>
 <body>
+
     <div class="product__container">
 
         <div class="product__box">
-            <h2 class="product__box__name">Product Name</h2>
+            <h2 class="product__box__name">Cyan Model</h2>
             <a href="#" class="product__box__buy">Buy Now</a>
             <div class="product__box__circle"></div>
+            <p class="product__box__text product__box__text-1">Professional Audio</p>
             <img src="./assets/img/auricular-01.png" alt="" class="product__box__product">
         </div>
 
         <div class="product__box">
-            <h2 class="product__box__name">Product Name</h2>
+            <h2 class="product__box__name">Yellow Model</h2>
             <a href="#" class="product__box__buy">Buy Now</a>
             <div class="product__box__circle"></div>
+            <p class="product__box__text product__box__text-2">Professional Audio</p>
             <img src="./assets/img/auricular-02.png" alt="" class="product__box__product">
         </div>
 
         <div class="product__box">
-            <h2 class="product__box__name">Product Name</h2>
+            <h2 class="product__box__name">Pink Model</h2>
             <a href="#" class="product__box__buy">Buy Now</a>
             <div class="product__box__circle"></div>
+            <p class="product__box__text product__box__text-3">Professional Audio</p>
             <img src="./assets/img/auricular-03.png" alt="" class="product__box__product">
         </div>
 
+        <footer class="footer">
+            <p class="firma">By Marcos Bort - with vanilla-tilt</p>
+        </footer>
+
     </div>
-    
+
     <script src="./assets/js/vanilla-tilt.min.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".product__box"), {
@@ -41,5 +49,6 @@
             speed: 400
         });
     </script>
+    
 </body>
 </html>
