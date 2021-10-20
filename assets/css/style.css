@@ -166,3 +166,11 @@ body {
     text-align: center;
     margin-top: -180px;
 }
+
+@media (max-width: 1139px) {
+    .footer {
+        /* display: none; */
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
