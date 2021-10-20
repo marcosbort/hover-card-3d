@@ -35,12 +35,13 @@ body {
     transform-style: preserve-3d;
 }
 
+/* Professional Audio */
 .product__box__text {
     position: absolute;
-    display: none;
-    top: 50px;
+    /* display: none; */
+    top: 12%;
     left: 80px;
-    font-weight: 200;
+    font-weight: 700;
     font-style: italic;
 }   
 
@@ -94,7 +95,7 @@ body {
 /* Circle */
 .product__box__circle {
     position: absolute;
-    top: 50%;
+    top: 63%;
     left: 50%;
     width: 200px;
     height: 200px;
