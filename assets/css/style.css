@@ -45,7 +45,7 @@ body {
     font-style: italic;
 }   
 
-/* Product Name */
+/* Product Name (Color Model) */
 .product__box__name {
     position: absolute;
     top: 0;
