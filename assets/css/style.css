@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    min-height: 85vh;
 }
 
 .product__container {
@@ -34,16 +34,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 1200px;
+    width: 1000px;
     transform-style: preserve-3d;
 }
 
 /* Box */
 .product__box {
     position: relative;
-    width: 300px;
-    height: 400px;
-    margin: 40px;
+    width: 280px;
+    height: 380px;
+    margin: 26px;
     background: #232323;
     border-radius: 20px;
     transform-style: preserve-3d;
@@ -54,7 +54,7 @@ body {
     position: absolute;
     /* display: none; */
     top: 12%;
-    left: 80px;
+    left: 58px;
     font-weight: 700;
     font-style: italic;
 }   
@@ -92,7 +92,7 @@ body {
     color: #fff;
     font-weight: 600;
     background: #333;
-    padding: 10px 25px;
+    padding: 8px 22px;
     border-radius: 30px;
     text-decoration: none;
     transition: 0.5s;
@@ -102,17 +102,17 @@ body {
 
     .product__box:hover .product__box__buy {
         transform: translate3d(-50%,-50%,150px);
-        bottom: 30px;
+        bottom: 32px;
         opacity: 1;
     }
 
 /* Circle */
 .product__box__circle {
     position: absolute;
-    top: 63%;
+    top: 60%;
     left: 50%;
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     transition: 0.5s;
     background: #fff;
@@ -128,20 +128,20 @@ body {
 
 /* Product */
 .product__box__product {
-    width: 230px;
-    position: absolute;
-    top: 50%;
-    left: 46%;
-    max-width: 300px;
-    transition: 0.5s;
-    transform-style: preserve-3d;
-    transform: translate3d(-50%,-50%,10px) rotate(6deg);
-    z-index: 10;
+	width: 220px;
+	position: absolute;
+	top: 51%;
+	left: 49%;
+	max-width: 300px;
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	transform: translate3d(-50%,-50%,10px) rotate(6deg);
+	z-index: 10;
 }
 
     .product__box:hover .product__box__product {
-        transform: translate3d(-50%,-50%,80px) rotate(-16deg);
-        width: 330px
+        transform: translate3d(-54%,-50%,80px) rotate(-16deg);
+        width: 300px
     }
 
 /* Colors Circle and Buy */
