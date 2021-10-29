@@ -42,8 +42,8 @@ body {
 .product__box {
     position: relative;
     width: 280px;
-    height: 380px;
-    margin: 26px;
+    height: 390px;
+    margin: 25px;
     background: #232323;
     border-radius: 20px;
     transform-style: preserve-3d;
@@ -51,13 +51,13 @@ body {
 
 /* Professional Audio */
 .product__box__text {
-    position: absolute;
-    /* display: none; */
-    top: 12%;
-    left: 58px;
-    font-weight: 700;
-    font-style: italic;
-}   
+	position: absolute;
+	/* display: none; */
+	top: 12%;
+	left: 60px;
+	font-weight: 700;
+	font-style: italic;
+}  
 
 /* Product Name (Color Model) */
 .product__box__name {
@@ -141,7 +141,7 @@ body {
 
     .product__box:hover .product__box__product {
         transform: translate3d(-54%,-50%,80px) rotate(-16deg);
-        width: 300px
+        width: 280px
     }
 
 /* Colors Circle and Buy */
