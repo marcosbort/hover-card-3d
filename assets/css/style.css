@@ -7,25 +7,27 @@
 }
 
 body {
+    background: linear-gradient(135deg,#d41e31,#491f8f);
     background: #131313;
 }
 
 .title-top {
-    margin: 0px auto;
-    margin-top: 20px;
+    position: absolute;
+    top: 20px;
+    right: 50%;
+    transform: translateX(50%);
     font-weight: 200;
     font-size: 16px;
     font-style: italic;
     color: #333;
     text-align: center;
-    top: 40px;
 }
 
 .general-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 85vh;
+    min-height: 100vh;
 }
 
 .product__container {
@@ -34,7 +36,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 1000px;
+    max-width: 1000px;
     transform-style: preserve-3d;
 }
 
@@ -44,9 +46,9 @@ body {
     width: 280px;
     height: 370px;
     margin: 25px;
-    background: #232323;
     border-radius: 20px;
     transform-style: preserve-3d;
+    background: rgb(35, 35, 35);
 }
 
 /* Professional Audio */
